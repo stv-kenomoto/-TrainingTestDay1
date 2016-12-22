@@ -47,7 +47,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat width = collectionView.frame.size.width / 7;
+    CGFloat width = collectionView.frame.size.width / NSCalendarDaysPerWeek;
     CGFloat height;
     switch (indexPath.section) {
         case CalendarViewDataSourceCellTypeHeader:

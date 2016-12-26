@@ -55,7 +55,7 @@ const NSInteger NSCalendarDaysPerWeek = 7;
     return date;
 }
 
-- (BOOL)isEqualToDate:(NSDate *)date {
+- (BOOL)isEqualMonthWithDate:(NSDate *)date {
     NSDateComponents *componentsForCell = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:date];
     NSInteger monthForCell = [componentsForCell month];
 

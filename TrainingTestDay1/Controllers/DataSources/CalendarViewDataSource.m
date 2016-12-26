@@ -49,7 +49,7 @@
 
     [cell setText:[dateForCell dateStringWithFormat:NSStringCalendarDateCellFormat.localized]];
 
-    if (![self.date isEqualToDate:dateForCell]) {
+    if (![self.date isEqualMonthWithDate:dateForCell]) {
         [cell setColor:[UIColor lightGrayColor]];
         return cell;
     }

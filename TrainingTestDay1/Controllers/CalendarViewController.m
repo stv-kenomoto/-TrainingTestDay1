@@ -26,7 +26,7 @@
     [super viewDidLoad];
 
     NSDate *date = [NSDate date];
-    self.navigationItem.title = [date dateStringWithFormat:NSStringCalendarTitleFormat.localized];
+    self.title = [date dateStringWithFormat:NSStringCalendarTitleFormat.localized];
     self.calendarViewDataSource = [[CalendarViewDataSource alloc] initWithDate:date];
     self.collectionView.dataSource = self.calendarViewDataSource;
     self.collectionView.delegate = self;

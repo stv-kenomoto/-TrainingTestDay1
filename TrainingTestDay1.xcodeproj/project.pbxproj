@@ -19,9 +19,6 @@
 		543106A81E0A689300FE6723 /* CalendarDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106A71E0A689300FE6723 /* CalendarDateCell.m */; };
 		543106AB1E0A702B00FE6723 /* CalendarHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106AA1E0A702B00FE6723 /* CalendarHeaderCell.m */; };
 		543106B11E0B5E1A00FE6723 /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106B01E0B5E1A00FE6723 /* NSDate+Calendar.m */; };
-		543106B31E0B7C1400FE6723 /* Week.plist in Resources */ = {isa = PBXBuildFile; fileRef = 543106B21E0B7C1400FE6723 /* Week.plist */; };
-		543106BB1E0B9C6700FE6723 /* Week.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106BA1E0B9C6700FE6723 /* Week.m */; };
-		543106BE1E0B9E3400FE6723 /* WeekPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106BD1E0B9E3400FE6723 /* WeekPlist.m */; };
 		543106C01E0BB36600FE6723 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543106BF1E0BB36600FE6723 /* Localizable.strings */; };
 		543106C31E0BB41500FE6723 /* NSString+Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 543106C21E0BB41500FE6723 /* NSString+Localizable.m */; };
 /* End PBXBuildFile section */
@@ -68,11 +65,6 @@
 		543106AA1E0A702B00FE6723 /* CalendarHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHeaderCell.m; sourceTree = "<group>"; };
 		543106AF1E0B5E1A00FE6723 /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Calendar.h"; path = "../Categories/NSDate+Calendar.h"; sourceTree = "<group>"; };
 		543106B01E0B5E1A00FE6723 /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Calendar.m"; path = "../Categories/NSDate+Calendar.m"; sourceTree = "<group>"; };
-		543106B21E0B7C1400FE6723 /* Week.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Week.plist; sourceTree = "<group>"; };
-		543106B91E0B9C6700FE6723 /* Week.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week.h; sourceTree = "<group>"; };
-		543106BA1E0B9C6700FE6723 /* Week.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week.m; sourceTree = "<group>"; };
-		543106BC1E0B9E3400FE6723 /* WeekPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekPlist.h; sourceTree = "<group>"; };
-		543106BD1E0B9E3400FE6723 /* WeekPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekPlist.m; sourceTree = "<group>"; };
 		543106BF1E0BB36600FE6723 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		543106C11E0BB41500FE6723 /* NSString+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Localizable.h"; path = "../Categories/NSString+Localizable.h"; sourceTree = "<group>"; };
 		543106C21E0BB41500FE6723 /* NSString+Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localizable.m"; sourceTree = "<group>"; };
@@ -128,7 +120,6 @@
 			children = (
 				543106AC1E0B5DAF00FE6723 /* Categories */,
 				543106941E0A449700FE6723 /* Controllers */,
-				543106B81E0B9C3E00FE6723 /* Models */,
 				543106961E0A44E100FE6723 /* Resources */,
 				543106951E0A44A900FE6723 /* Views */,
 			);
@@ -189,7 +180,6 @@
 				543106611E0A442B00FE6723 /* Supporting Files */,
 				5431066D1E0A442B00FE6723 /* Assets.xcassets */,
 				543106721E0A442B00FE6723 /* Info.plist */,
-				543106B21E0B7C1400FE6723 /* Week.plist */,
 				543106BF1E0BB36600FE6723 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -233,17 +223,6 @@
 				543106C21E0BB41500FE6723 /* NSString+Localizable.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		543106B81E0B9C3E00FE6723 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				543106B91E0B9C6700FE6723 /* Week.h */,
-				543106BA1E0B9C6700FE6723 /* Week.m */,
-				543106BC1E0B9E3400FE6723 /* WeekPlist.h */,
-				543106BD1E0B9E3400FE6723 /* WeekPlist.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				543106C01E0BB36600FE6723 /* Localizable.strings in Resources */,
-				543106B31E0B7C1400FE6723 /* Week.plist in Resources */,
 				543106711E0A442B00FE6723 /* LaunchScreen.storyboard in Resources */,
 				5431066E1E0A442B00FE6723 /* Assets.xcassets in Resources */,
 				5431066C1E0A442B00FE6723 /* Calendar.storyboard in Resources */,
@@ -386,13 +364,11 @@
 			files = (
 				543106691E0A442B00FE6723 /* CalendarViewController.m in Sources */,
 				543106661E0A442B00FE6723 /* AppDelegate.m in Sources */,
-				543106BE1E0B9E3400FE6723 /* WeekPlist.m in Sources */,
 				543106AB1E0A702B00FE6723 /* CalendarHeaderCell.m in Sources */,
 				543106B11E0B5E1A00FE6723 /* NSDate+Calendar.m in Sources */,
 				543106631E0A442B00FE6723 /* main.m in Sources */,
 				543106C31E0BB41500FE6723 /* NSString+Localizable.m in Sources */,
 				543106A11E0A641900FE6723 /* CalendarViewDataSource.m in Sources */,
-				543106BB1E0B9C6700FE6723 /* Week.m in Sources */,
 				543106A81E0A689300FE6723 /* CalendarDateCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,8 @@
 
 @interface NSString (Localizable)
 
+UIKIT_EXTERN NSString *const NSStringCalendarDateCellFormat;
+UIKIT_EXTERN NSString *const NSStringCalendarHeaderCellFormat;
 UIKIT_EXTERN NSString *const NSStringCalendarTitleFormat;
 
 - (NSString *)localized;

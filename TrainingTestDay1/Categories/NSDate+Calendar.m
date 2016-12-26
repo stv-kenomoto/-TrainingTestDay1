@@ -42,8 +42,8 @@ const NSInteger NSCalendarDaysPerWeek = 7;
 
 - (NSDate *)dateForCellAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger ordinalityOfFirstDay = [[NSCalendar currentCalendar] ordinalityOfUnit:NSCalendarUnitDay
-                                            inUnit:NSCalendarUnitWeekOfMonth
-                                           forDate:[self firstDateOfMonth]];
+                                                                             inUnit:NSCalendarUnitWeekOfMonth
+                                                                            forDate:[self firstDateOfMonth]];
 
     NSDateComponents *dateComponents = [NSDateComponents new];
     dateComponents.day = indexPath.item - (ordinalityOfFirstDay - 1);
@@ -55,20 +55,8 @@ const NSInteger NSCalendarDaysPerWeek = 7;
     return date;
 }
 
-- (NSString *)dayStringForCellAtIndexPath:(NSIndexPath *)indexPath {
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"d";
-    return [formatter stringFromDate:[self dateForCellAtIndexPath:indexPath]];
-}
-
-- (NSDateWeekdayType)weekdayTypeForCellAtIndexPath:(NSIndexPath *)indexPath {
-    NSDate *date = [self dateForCellAtIndexPath:indexPath];
-    return [date weekdayType];
-}
-
-- (BOOL)isEqualToDateForCellAtIndexPath:(NSIndexPath *)indexPath {
-    NSDate *dateForCell = [self dateForCellAtIndexPath:indexPath];
-    NSDateComponents *componentsForCell = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:dateForCell];
+- (BOOL)isEqualToDate:(NSDate *)date {
+    NSDateComponents *componentsForCell = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:date];
     NSInteger monthForCell = [componentsForCell month];
 
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self];

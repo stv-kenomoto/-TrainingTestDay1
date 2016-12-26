@@ -26,7 +26,7 @@
     CalendarHeaderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CalendarHeaderCellIdentifier forIndexPath:indexPath];
     NSDate *dateForCell = [self.date dateForCellAtIndexPath:indexPath];
 
-    [cell setText:[dateForCell dateStringWithFormat:NSStringCalendarHeaderCellFormat.localized]];
+    [cell setText:[dateForCell dateStringWithFormat:NSStringWeekFormat.localized]];
     switch ([dateForCell weekdayType]) {
         case NSDateWeekdayTypeSunday:
             [cell setColor:[UIColor redColor]];
@@ -47,7 +47,7 @@
     CalendarDateCell *cell = (CalendarDateCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CalendarDateCellIdentifier forIndexPath:indexPath];
     NSDate *dateForCell = [self.date dateForCellAtIndexPath:indexPath];
 
-    [cell setText:[dateForCell dateStringWithFormat:NSStringCalendarDateCellFormat.localized]];
+    [cell setText:[dateForCell dateStringWithFormat:NSStringDayFormat.localized]];
 
     if (![self.date isEqualMonthWithDate:dateForCell]) {
         [cell setColor:[UIColor lightGrayColor]];

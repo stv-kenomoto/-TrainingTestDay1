@@ -8,9 +8,9 @@
 
 #import "NSString+Localizable.h"
 
-NSString *const NSStringCalendarDateCellFormat = @"calendarDateCellFormat";
-NSString *const NSStringCalendarHeaderCellFormat = @"calendarHeaderCellFormat";
 NSString *const NSStringCalendarTitleFormat = @"calendarTitleFormat";
+NSString *const NSStringDayFormat = @"dayFormat";
+NSString *const NSStringWeekFormat = @"weekFormat";
 
 @implementation NSString (Localizable)
 

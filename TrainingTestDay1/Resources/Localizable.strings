@@ -6,8 +6,8 @@
   Copyright © 2016年 enomt. All rights reserved.
 */
 
-"calendarDateCellFormat" = "d";
-
-"calendarHeaderCellFormat" = "E";
-
 "calendarTitleFormat" = "yyyy年MM月";
+
+"dayFormat" = "d";
+
+"weekFormat" = "E";

@@ -66,15 +66,15 @@
 		543106A71E0A689300FE6723 /* CalendarDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarDateCell.m; path = TrainingTestDay1/Views/Cells/CalendarDateCell.m; sourceTree = SOURCE_ROOT; };
 		543106A91E0A702B00FE6723 /* CalendarHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHeaderCell.h; sourceTree = "<group>"; };
 		543106AA1E0A702B00FE6723 /* CalendarHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHeaderCell.m; sourceTree = "<group>"; };
-		543106AF1E0B5E1A00FE6723 /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
-		543106B01E0B5E1A00FE6723 /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
+		543106AF1E0B5E1A00FE6723 /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Calendar.h"; path = "../Categories/NSDate+Calendar.h"; sourceTree = "<group>"; };
+		543106B01E0B5E1A00FE6723 /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Calendar.m"; path = "../Categories/NSDate+Calendar.m"; sourceTree = "<group>"; };
 		543106B21E0B7C1400FE6723 /* Week.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Week.plist; sourceTree = "<group>"; };
 		543106B91E0B9C6700FE6723 /* Week.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week.h; sourceTree = "<group>"; };
 		543106BA1E0B9C6700FE6723 /* Week.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Week.m; sourceTree = "<group>"; };
 		543106BC1E0B9E3400FE6723 /* WeekPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekPlist.h; sourceTree = "<group>"; };
 		543106BD1E0B9E3400FE6723 /* WeekPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekPlist.m; sourceTree = "<group>"; };
 		543106BF1E0BB36600FE6723 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		543106C11E0BB41500FE6723 /* NSString+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localizable.h"; sourceTree = "<group>"; };
+		543106C11E0BB41500FE6723 /* NSString+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Localizable.h"; path = "../Categories/NSString+Localizable.h"; sourceTree = "<group>"; };
 		543106C21E0BB41500FE6723 /* NSString+Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localizable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +126,7 @@
 		543106601E0A442B00FE6723 /* TrainingTestDay1 */ = {
 			isa = PBXGroup;
 			children = (
-				543106AC1E0B5DAF00FE6723 /* Category */,
+				543106AC1E0B5DAF00FE6723 /* Categories */,
 				543106941E0A449700FE6723 /* Controllers */,
 				543106B81E0B9C3E00FE6723 /* Models */,
 				543106961E0A44E100FE6723 /* Resources */,
@@ -224,7 +224,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		543106AC1E0B5DAF00FE6723 /* Category */ = {
+		543106AC1E0B5DAF00FE6723 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				543106AF1E0B5E1A00FE6723 /* NSDate+Calendar.h */,
@@ -232,7 +232,7 @@
 				543106C11E0BB41500FE6723 /* NSString+Localizable.h */,
 				543106C21E0BB41500FE6723 /* NSString+Localizable.m */,
 			);
-			path = Category;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		543106B81E0B9C3E00FE6723 /* Models */ = {

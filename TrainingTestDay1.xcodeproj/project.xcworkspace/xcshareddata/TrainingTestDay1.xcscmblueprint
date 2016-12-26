@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B25A5D9103F57297A02FCB6AFF681E2CDF246285",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B25A5D9103F57297A02FCB6AFF681E2CDF246285" : 9223372036854775807,
+    "0628C21E6AA07A496FCCB4351DD8DFC449517558" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C118F3E8-4C03-49CB-9882-644279FC1AB6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B25A5D9103F57297A02FCB6AFF681E2CDF246285" : "TrainingTestDay1\/",
+    "0628C21E6AA07A496FCCB4351DD8DFC449517558" : "TrainingTestDay2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TrainingTestDay1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TrainingTestDay1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stv-kenomoto\/TrainingTestDay2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0628C21E6AA07A496FCCB4351DD8DFC449517558"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stv-kenomoto\/TrainingTestDay1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B25A5D9103F57297A02FCB6AFF681E2CDF246285"
+    }
+  ]
+}

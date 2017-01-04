@@ -7,6 +7,8 @@
 //
 
 #import "CalendarDateCell.h"
+#import "NSDate+Calendar.h"
+#import "NSString+Localizable.h"
 
 NSString *const CalendarDateCellIdentifier = @"CalendarDateCell";
 const CGFloat CalendarDateCellHeight = 66;
@@ -19,12 +21,26 @@ const CGFloat CalendarDateCellHeight = 66;
 
 @implementation CalendarDateCell
 
-- (void)setText:(NSString *)text {
-    self.label.text = text;
-}
+- (void)setupWithCalendar:(Calendar *)calendar {
+    self.label.text = [calendar.date dateStringWithFormat:NSStringDayFormat.localized];
+    if (calendar.isDifferentMonth) {
+        self.label.textColor = [UIColor lightGrayColor];
+        return;
+    }
 
-- (void)setColor:(UIColor *)color {
-    self.label.textColor = color;
+    switch ([calendar.date weekdayType]) {
+        case NSDateWeekdayTypeSunday:
+            self.label.textColor = [UIColor redColor];
+            break;
+
+        case NSDateWeekdayTypeSaturday:
+            self.label.textColor = [UIColor blueColor];
+            break;
+
+        default:
+            self.label.textColor = [UIColor blackColor];
+            break;
+    }
 }
 
 @end
